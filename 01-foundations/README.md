@@ -25,7 +25,7 @@ OSX users, you should have Homebrew installed at this point. If you don't, do it
 ```bash
 brew install pyenv
 pyenv install 3.3.6
-md /workspace/hellopython && cd $_
+mkdir ~/workspace/python && cd $_
 touch hello.py
 subl .
 ```
@@ -36,14 +36,14 @@ The [venv](https://docs.python.org/3/library/venv.html#module-venv) was released
 
 ## Hello, world
 
-We're going to do the traditional `Hello, world` program to start off. Put the following code in `hello.py`.
+We're going to do the traditional `Hello, world` program to start off. Put the following code in `~/workspace/python/hello.py`.
 
 ```python
 print "Hello!"
 print "Is it me you're looking for?"
 ```
 
-In the CLI, execute the following command.
+In the CLI, execute the following command in the `python` directory.
 
 ```bash
 python hello.py
@@ -67,4 +67,4 @@ bow down to me
 
 ## Pip
 
-Pip is, by far, the most common way for [Python packages to be installed](https://packaging.python.org/en/latest/installing/#use-pip-for-installing). Take some time, by follow the previous link, to review how to properly use pip to install packages
+Pip is, by far, the most common way for [Python packages to be installed](https://packaging.python.org/en/latest/installing/#use-pip-for-installing). Take some time, by following the previous link, to review how to properly use pip to install packages.
