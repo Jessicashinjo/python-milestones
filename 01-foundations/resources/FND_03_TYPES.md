@@ -23,4 +23,7 @@ Everything is an object in Python.
 >>> reindeer = ["dasher", "dancer", "prancer", "vixen", "olive"]
 >>> type(reindeer)
 <class 'list'>
+>>> boy_bands = { "nsync", "one direction", "boyz II men" }
+>>> type(boy_bands)
+<class 'set'>
 ```
