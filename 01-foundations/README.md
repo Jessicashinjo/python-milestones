@@ -18,7 +18,9 @@ We're going to be learning version 3 of Python, and then later in the course, ta
 
 ### Pyenv
 
-You should have Homebrew installed at this point. If you don't, do it now. Then run these commands in order.
+#### OSX
+
+OSX users, you should have Homebrew installed at this point. If you don't, do it now. Then run these commands in order.
 
 ```bash
 brew install pyenv
@@ -27,6 +29,10 @@ md /workspace/hellopython && cd $_
 touch hello.py
 subl .
 ```
+
+# Windows
+
+The [venv](https://docs.python.org/3/library/venv.html#module-venv) was released with Python 3.3 to give Windows user the ability to execute different versions of Python.
 
 ## Hello, world
 
@@ -47,7 +53,7 @@ python hello.py
 
 You can use the CLI interpreter to enter and run some code that you just want to test out without having to put it in a file and running it.
 
-```bash
+```
 ╰─$ python
 Python 2.7.10 (default, Jul 14 2015, 19:46:27) 
 [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)] on darwin
@@ -58,3 +64,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ... 
 bow down to me
 ```
+
+## Pip
+
+Pip is, by far, the most common way for [Python packages to be installed](https://packaging.python.org/en/latest/installing/#use-pip-for-installing). Take some time, by follow the previous link, to review how to properly use pip to install packages
