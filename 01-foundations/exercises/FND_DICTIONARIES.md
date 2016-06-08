@@ -1,27 +1,33 @@
-# Python Planet List
+# Python Stock Dictionary
 
-## Adding to a list
-
-Unlike JavaScript, in Python, there are several ways to add items to a list.
-
-1. Using the `+` operator.
-1. Use the `append(value)` method to add a single, new value.
-1. Use the `extend(new_list)` method which will concatenate another list on to the end of a list.
-1. Use the `insert(loc, value)` method to insert a single, new value at a specific location in a list.
-
-## Exercise
+## Setup
 
 ```
-mkdir -p ~/workspace/python/exercises/lists && cd $_
-echo 'planet_list = ["mercury", "mars"]
-pla' >> planets.py
-subl .
+mkdir -p ~/workspace/python/exercises/dictionaries && cd $_
+touch stocks.py
 ```
 
-1. Use `append()` to add Jupiter and Saturn at the end of the list.
-1. Use the `extend()` method to add another list of the last two planets in our solar system to the end of the list.
-1. Use `insert()` to add Earth, and Venus in the correct order.
-1. Use `append()` again to add Pluto to the end of the list.
-1. Now that all the planets are in the list, slice the list in order to get the rocky planets into a new list called `rocky_planets`.
-1. Being good amateur astronomers, we know that Pluto is now a dwarf planet, so use the `del` operation to remove it from the end of `planet_list`.
+## Instructions
 
+A block of publicly traded stock has a variety of attributes, we'll look at a few of them. A stock has a ticker symbol and a company name. Create a simple dict with ticker symbols and company names.
+
+For example:
+
+```python
+stockDict = { 'GM': 'General Motors', 
+ 'CAT':'Caterpillar', 'EK':"Eastman Kodak" }
+```
+
+Create a simple list of blocks of stock. These could be tuples with ticker symbols, prices, dates and number of shares. 
+
+##### Example
+
+```python
+purchases = [ ( 'GE', 100, '10-sep-2001', 48 ), 
+ ( 'CAT', 100, '1-apr-1999', 24 ), 
+ ( 'GE', 200, '1-jul-1998', 56 ) ]
+```
+
+Create a purchase history report that computes the full purchase price (shares times dollars) for each block of stock and uses the stockDict to look up the full company name. This is the basic relational database join algorithm between two tables.
+
+Create a second purchase summary that which accumulates total investment by ticker symbol. In the above sample data, there are two blocks of GE. These can easily be combined by creating a dict where the key is the ticker and the value is the list of blocks purchased. The program makes one pass through the data to create the dict. A pass through the dict can then create a report showing each ticker symbol and all blocks of stock.

@@ -1,22 +1,14 @@
 # Python Planet List
 
-## Adding to a list
-
-Unlike JavaScript, in Python, there are several ways to add items to a list.
-
-1. Using the `+` operator.
-1. Use the `append(value)` method to add a single, new value.
-1. Use the `extend(new_list)` method which will concatenate another list on to the end of a list.
-1. Use the `insert(loc, value)` method to insert a single, new value at a specific location in a list.
-
-## Exercise
+## Setup
 
 ```
 mkdir -p ~/workspace/python/exercises/lists && cd $_
-echo 'planet_list = ["mercury", "mars"]
+echo 'planet_list = ["Mercury", "Mars"]
 pla' >> planets.py
-subl .
 ```
+
+## Exercise
 
 1. Use `append()` to add Jupiter and Saturn at the end of the list.
 1. Use the `extend()` method to add another list of the last two planets in our solar system to the end of the list.
@@ -25,3 +17,7 @@ subl .
 1. Now that all the planets are in the list, slice the list in order to get the rocky planets into a new list called `rocky_planets`.
 1. Being good amateur astronomers, we know that Pluto is now a dwarf planet, so use the `del` operation to remove it from the end of `planet_list`.
 
+## Iterating over planets
+
+1. Create another list containing tuples. Each tuple will hold the name of a spacecraft that we have launched, and the names of the planet(s) that it has visited, or landed on. (e.g. `('Cassini', 'Jupiter')`).
+1. Iterate over your list of planets, and inside that loop, iterate over the list of tuples. Print, for each planet, which sattelites have visited. 
