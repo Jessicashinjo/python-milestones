@@ -27,3 +27,15 @@ Everything is an object in Python.
 >>> type(boy_bands)
 <class 'set'>
 ```
+
+## Lists
+
+A list is like an array in JavaScript. Just an unordered, untyped collection of any values. The example below is storing strings, an integer, and even another list inside a list.
+
+```python
+junk = ['carrots', 'celery', 'kale', 2, ['peas', 'corn']] 
+junk.insert(1, 'kidney beans')
+junk.extend([True, 'tornado'])
+junk.append('hurricane')
+print(junk)
+```
