@@ -1,16 +1,24 @@
 # Python Tuples
 
+Tuples are like lists, but are immutable. They can't be modified once defined. However, finding values in a tuple is faster than in a list.
+
 ## Setup
 
 ```
 mkdir -p ~/workspace/python/exercises/tuples && cd $_
-echo 'planet_list = ["mercury", "mars", "saturn"]
-pla' >> planets.py
+touch zoo.py
 subl .
 ```
 
 ## Instructions
 
-1. Use the `extend()` method to add another list of the remaining two planets in our solar system to the end of the `planet_list` list.
-1. 
+1. Create a tuple named `zoo` that contains your favorite animals.
+1. Find one of your animals using the `.index(value)` method on the tuple.
+1. Determine if an animal is in your tuple by using `value in tuple`.
+1. Create a variable for each of the animals in your tuple with this cool feature of Python.
+    ```
+    # example
+    (lizard, fox, mammoth) = zoo
+    print(lizard)
+    ```
 
