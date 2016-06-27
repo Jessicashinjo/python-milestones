@@ -1,4 +1,9 @@
-# Setup
+# Python Foundations
+
+![API Era Milestone](./python-foundations.png)
+
+
+## Setup
 
 See if Python is installed.
 
