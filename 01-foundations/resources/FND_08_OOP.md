@@ -32,7 +32,7 @@ class Dog(Animal):
 
 ## Polymorphism
 
-[Polymorphism](https://msdn.microsoft.com/en-us/library/ms173152.aspx) means that different objects may share the same set of properties and methods, but each may use those properties and methods to achieve different behavior.
+[Polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) means that different objects may share the same set of properties and methods, but each may use those properties and methods to achieve different behavior.
 
 For example, in your base class of Animal, you define a general rule of how fast an Animal can walk. However, in the derived Lizard class, you can override that rule to give Lizards a slightly different behavior. For every leg they have, they can move twice as fast as a generic Animal.
 
