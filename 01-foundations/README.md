@@ -44,8 +44,8 @@ The [venv](https://docs.python.org/3/library/venv.html#module-venv) was released
 We're going to do the traditional `Hello, world` program to start off. Put the following code in `~/workspace/python/hello.py`.
 
 ```python
-print "Hello!"
-print "Is it me you're looking for?"
+print("Hello!")
+print("Is it me you're looking for?")
 ```
 
 In the CLI, execute the following command in the `python` directory.
