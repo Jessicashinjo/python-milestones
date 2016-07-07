@@ -108,12 +108,21 @@ In the previous example, we used strings to define an animal. Let's be more deta
 
 ```python
 class Animal:
-    def __init__(self, name, species):
+    def __init__(self, name = None, species = None):
         self.name = name
         self.species = species
+        self.speed = 0
+        self.legs = 0
 
     def getName(self):
         return self.name
+
+    def walk(self):
+        print("Parent class walk method")
+        self.speed = self.speed + (0.1 * self.legs)
+
+    def setSpecies(self, species):
+        self.species = species
 
     def getSpecies(self):
         return self.species
@@ -121,6 +130,7 @@ class Animal:
     # __str__ is a special function equivalent to toString() in JavaScript
     def __str__(self):
         return "%s is a %s" % (self.name, self.species)
+
 
 class Dog(Animal):
     def __init__(self, name):
