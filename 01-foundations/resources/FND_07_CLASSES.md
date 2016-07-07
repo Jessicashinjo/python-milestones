@@ -121,6 +121,13 @@ class Animal:
     # __str__ is a special function equivalent to toString() in JavaScript
     def __str__(self):
         return "%s is a %s" % (self.name, self.species)
+
+class Dog(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name, "Dog")
+
+    def walk(self):
+        self.speed = self.speed + (0.2 * self.legs)
 ```
 
     
