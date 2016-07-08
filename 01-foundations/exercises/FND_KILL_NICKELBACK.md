@@ -31,8 +31,8 @@ touch nickelback.py
     songs = {
         ('Nickelback', 'How You Remind Me'), 
         ('Will.i.am', 'That Power'),
-        ('Miles Davis', 'Stella by Starlight')
-        ('Nickelback', 'Animals'), 
+        ('Miles Davis', 'Stella by Starlight'),
+        ('Nickelback', 'Animals')
     }
     ```
 2. Using a set comprehension, create a new set that contains all songs that were not performed by Nickelback.
