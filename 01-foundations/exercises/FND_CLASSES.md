@@ -21,5 +21,6 @@ Create a class that contains information about employees of a company and define
         def getName(self):
             return self.name
 
+        # Add the remaining methods to fill the requirements above
     ```
-Complete writing the methods that create an instance of the Company class, then print a list that contains profiles for 3 company employees.
+    
