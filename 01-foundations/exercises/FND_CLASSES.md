@@ -4,7 +4,7 @@
 
 ```
 mkdir -p ~/workspace/python/exercises/classes && cd $_
-touch employee.py
+touch employees.py
 ```
 
 ## Instructions
