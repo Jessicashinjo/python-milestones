@@ -1,4 +1,4 @@
-# Employee Classes
+# Classes
 
 ## Setup
 
