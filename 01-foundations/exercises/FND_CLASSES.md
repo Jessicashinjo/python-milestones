@@ -10,6 +10,7 @@ touch employees.py
 ## Instructions
 
 Create a class that contains information about employees of a company and define methods to get employee name, job title, and start date.
+
     ```
     class Company(object):
 
@@ -23,4 +24,3 @@ Create a class that contains information about employees of a company and define
 
         # Add the remaining methods to fill the requirements above
     ```
-    
