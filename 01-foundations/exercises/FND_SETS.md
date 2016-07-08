@@ -4,7 +4,7 @@
 
 ```
 mkdir -p ~/workspace/python/exercises/sets && cd $_
-cars.py
+touch cars.py
 ```
 
 ## Instructions
