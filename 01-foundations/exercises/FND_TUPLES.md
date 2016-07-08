@@ -14,7 +14,7 @@ subl .
 
 1. Create a tuple named `zoo` that contains your favorite animals.
 1. Find one of your animals using the `.index(value)` method on the tuple.
-1. Determine if an animal is in your tuple by using `value in tuple`.
+1. Determine if an animal is in your tuple by using `for value in tuple`.
 1. Create a variable for each of the animals in your tuple with this cool feature of Python.
 
     ```
