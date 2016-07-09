@@ -2,7 +2,7 @@
 
 ## Python is Everywhere
 
-Python is a dynamically typed language, very similar to the JavaScript that you learned in your first three months at Nashville Software School. Any *nix based system (Unix, Linux, OSX, etc.) will have Python on it by default.
+Python is a dynamically typed language, very similar to the JavaScript that you learned in your first three months at Nashville Software School. Any *nix based system (Unix, Linux, OSX, etc.) will have Python on it by default. Windows will not, and you'll need to follow the instructions in the [Foundations milestone](./01-foundations#windows-users) README.
 
 ## Version 3
 
