@@ -19,11 +19,26 @@ python --version
 
 We're going to be learning version 3 of Python, and then later in the course, talk about differences between 2 and 3, because there is still a lot of version 2 code out in the wild and you will likely need to work with it.
 
+### Windows Users
+
+#### Installing Python
+
+Windows does not come with Python installed. You need to visit the [Python downloads](https://www.python.org/downloads/) site and grab version 3.3.6 and install it. It will get installed to the `C:\Python33` directory.
+
+After it is installed, you must add `C:\Python` to your system path. Here's how.
+
+1. Press your Windows key.
+2. Start typing **Control**.
+3. The search results should have the Windows Control Panel as the first result. Press enter.
+4. When the control panel screen appears, start typing in `environment` in the search bar in the upper right corner.
+5. Select the option to change environment variables. If you are presented with two options, choosing either one is fine.
+6. When the screen appears, click the button at the bottom for environment variables.
+7. Next, click on the `PATH` variable and choose to edit it.
+8. Go to the end of the string, and enter a semi-colon, and the new path entry. `;C:\Python33`
+
 ## Managing versions
 
-### Pyenv
-
-#### OSX
+### OSX / pyenv
 
 OSX users, you should have Homebrew installed at this point. If you don't, do it now. Then run these commands in order.
 
@@ -35,7 +50,28 @@ touch hello.py
 subl .
 ```
 
-# Windows
+After Pyenv is installed, you can make version 3.3.6 the new, globally accepted version by typing the following.
+
+```
+pyenv global 3.3.6
+```
+
+Now, when you check the version of Python with the command below, it should return 3.3.6.
+
+```
+python --version
+```
+
+---
+
+#### Troubleshooting
+
+
+If it still returns a different version, you will need to edit your `~/.bash_profile` file - or `~/.zshrc` if you installed oh-my-zsh - and follow steps 2 and 3 from the instructions on the [Basic Github Checkout section](https://github.com/yyuu/pyenv#basic-github-checkout) of pyenv's docs.
+
+---
+
+### Windows
 
 The [venv](https://docs.python.org/3/library/venv.html#module-venv) was released with Python 3.3 to give Windows user the ability to execute different versions of Python.
 
