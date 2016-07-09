@@ -73,3 +73,23 @@ bow down to me
 ## Pip
 
 Pip is, by far, the most common way for [Python packages to be installed](https://packaging.python.org/en/latest/installing/#use-pip-for-installing). Take some time, by following the previous link, to review how to properly use pip to install packages.
+
+## Order of Exercises
+
+This is a suggested order for completing the exercises in this milestone:
+
+Dictionaries
+Sets
+Lists
+Tuples
+Classes
+
+Family Dictionary
+Kill Nickelback
+RandomSquared
+Test_Animals
+
+Calculator 
+Koans
+
+
