@@ -11,11 +11,11 @@ Use Python to build a console app where the user is challenged to enter all the 
 ## Technical requirements
 
 1. Use one Class in addition to the program file.
-1. Your class should include a constructor function, an "addChar" method, and a "listLength" method.
-1. Keep your user's successfully input letters as a list of characters
-1. Use the string interpolation to craft your messages to users
+1. Your class should include the `__init__` constructor function, an `add_char` method, and a `list_length` method.
+1. Keep your user's successfully input letters as a list of characters.
+1. Use the string interpolation to craft your messages to users.
 
 ## Bonus Requirements
 
-1. Create a returnList Method on your class
-1. Create a non-letter "Easter egg" character that will display the current list of successfully input letters (but will not add itself to the list!)
+1. Create a `return_list` method on your class that will return the current list of characters that the user has entered in correctly.
+1. Create a non-letter "Easter egg" character that will display the current list of successfully input letters (but will not add itself to the list!) which calls the the `return_list` method.
