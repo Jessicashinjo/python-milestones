@@ -1,11 +1,13 @@
 # Bag o' Loot
 
-This exercises will help with your comprehension of [command line parameters](https://msdn.microsoft.com/en-us/library/aa288457(v=vs.71).aspx).
+This exercises will help with your comprehension of [command line parameters](http://www.pythonforbeginners.com/argv/more-fun-with-sys-argv).
 
 ## Setup
 
-1. Create a new Visual Studio console solution named *BagOLoot*.
-1. Create a matching project in your solution for unit tests (i.e. *BagOLootTests*).
+```
+mkdir -p ~/workspace/python/exercises/cli && cd $_
+touch lootbag.py
+```
 
 ## Instructions
 
@@ -14,33 +16,33 @@ You have an acquaintance whose job is to, once a year, delivery presents to the 
 1. Add a toy to the bag o' loot, and label it with the child's name who will receive it. 
 
     ```bash
-    BagOLoot.exe add kite suzy
-    BagOLoot.exe add baseball michael
+    python lootbag.py add kite suzy
+    python lootbag.py baseball michael
     ```
 
 1. Remove a toy from the bag o' loot in case a child's status changes before delivery starts.
 
     ```bash
-    BagOLoot.exe remove suzy kite
-    BagOLoot.exe remove michael baseball
+    python lootbag.py remove suzy kite
+    python lootbag.py remove michael baseball
     ```
 
 1. Produce a list of children currently receiving presents.
 
     ```bash
-    BagOLoot.exe ls
+    python lootbag.py ls
     ```
 
 1. List toys in the bag o' loot for a specific child.
 
     ```bash
-    BagOLoot.exe ls suzy
+    python lootbag.py ls suzy
     ```
 
 1. Specify when a child's toys have been delivered.
 
     ```bash
-    BagOLoot.exe delivered suzy
+    python lootbag.py delivered suzy
     ```
 
 
@@ -48,17 +50,14 @@ You have an acquaintance whose job is to, once a year, delivery presents to the 
 
 **Write a test before you write implementation code**
 
-```cs
-/*
-  This is only an example. If I find this code in your project
-  I will make you go back and delete it and write your own test.
- */
-[TestMethod]
-public void ToysForChildCanBeAddedToBag ()
+```python
+# This is only an example. If I find this code in your project
+#  I will make you go back and delete it and write your own test.
+def test_toys_for_child_can_be_added_to_bag ()
 {
-    Bag lootBag = new Bag();
-    lootBag.Add("kite", "suzy");
-    Assert.AreEqual("kite", lootBag.ChildItems("suzy").First());
+    lootBag = Bag()
+    lootBag.add_toy_for_child("kite", "suzy");
+    self.assertEqual("kite", lootBag.child_items("suzy")[0]);
 }
 ```
 
