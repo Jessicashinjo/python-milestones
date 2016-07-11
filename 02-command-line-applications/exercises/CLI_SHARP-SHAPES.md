@@ -2,13 +2,14 @@
 
 ## Setup
 
-1. Create a new Visual Studio solution named *SharpShapes*.
-1. In your terminal, cd to the new solution directory and copy in the Visual Studio `.gitignore`.
-1. Next, you must add a unit testing project to your solution. Read a [walkthrough of setting up unit tests](https://www.visualstudio.com/en-us/get-started/code/create-and-run-unit-tests-vs) in Visual Studio.
+```
+mkdir -p ~/workspace/python/exercises/cli && cd $_
+touch sharpshapes.py
+```
 
 ## Instructions
 
-This exercise involved creating a system that generates myriad shapes in C#. Build a command line tool that does the following:
+This exercise involved creating a system that generates myriad shapes. Build a command line tool that does the following:
 
 1. Outputs a numbered list of possible shapes to be built.
 1. Allow user to select one of the choices.
@@ -56,41 +57,27 @@ Start with a basic Shape class. Then plan out every specific shape that you want
 
 ##### Example starter tests
 
-```
-namespace SharpShapesTests
-{
-    [TestClass]
-    public class Test
-    {
-        [TestMethod]
-        public void TestShapeType ()
-        {
-            Shape simple = new Shape();
-            Assert.IsInstanceOfType(simple, typeof(Shape));
-        }
+```python
+import unittest
+from shape import Shape
 
-        [TestMethod]
-        public void TestShapeArea ()
-        {
-            Shape simple = new Shape();
-            simple.width = 2;
-            simple.height = 2;
-            Assert.IsTrue (simple.calculateArea () == 4);
-        }
+class TestSharpShapes(unittest.TestCase):
 
-        [TestMethod]
-        public void TestShapeVolume ()
-        {
-            Shape simple = new Shape();
-            simple.width = 2;
-            simple.height = 3;
-            simple.depth = 5;
-            Assert.IsTrue (simple.calculateVolume () == 30);
-        }
+    @classmethod
+    def setUpClass(self):
+        print('Set up class')
 
+    def test_shape_type(self):
+        simple = Shape()
 
-    }
-}
+        assertIsInstance(simple, Shape);
+
+    def test_shape_area(self):
+        simple = Shape()
+        simple.width = 2
+        simple.height = 2
+        
+        assertEqual(simple.calculate_area(), 4);
 ```
 
 
