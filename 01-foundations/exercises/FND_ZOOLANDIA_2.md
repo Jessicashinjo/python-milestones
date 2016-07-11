@@ -20,14 +20,15 @@ git checkout -b version-2
 
 1. Create a class for each of your animals. The class should, at the very least, set the initial name of all animals of that type to a name of your choosing.
 
-  ```py
+  ```python
   class MyAnimal(speciesClass):
-      self.name = "Moopsie"
+      def __init__(self)
+          self.name = "Moopsie"
   ```
 
 2. Use `print()` to output the name of each of your animal instances.
 
-  ```py
-  animalInstance = MyAnimal();
-  print(animalInstance.name);
+  ```python
+  animalInstance = MyAnimal()
+  print(animalInstance.name)
   ```
