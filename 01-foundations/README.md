@@ -114,17 +114,22 @@ Pip is, by far, the most common way for [Python packages to be installed](https:
 
 This is a suggested order for completing the exercises in this milestone:
 
-```Dictionaries
-Sets
-Lists
-Tuples
-Classes
-Family Dictionary
-Kill Nickelback
-RandomSquared
-Test_Animals
-Calculator 
+### Basic syntax
+1. Dictionaries
+1. Sets
+1. Lists
+1. Tuples
+1. Classes
+
+### Advanced Usage
+1. Family Dictionary
+1. Kill Nickelback
+1. RandomSquared
+1. Test_Animals
+1. Calculator 
+
+### Quiz
 Koans
-```
+
 
 
