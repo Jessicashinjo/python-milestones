@@ -14,7 +14,7 @@ A block of publicly traded stock has a variety of attributes, we'll look at a fe
 ##### Example
 
 ```python
-stockDict = { 'GM': 'General Motors', 
+stockDict = { 'GM': 'General Motors',
  'CAT':'Caterpillar', 'EK':"Eastman Kodak" }
 ```
 
@@ -23,8 +23,8 @@ Create a simple list of blocks of stock. These could be tuples with ticker symbo
 ##### Example
 
 ```python
-purchases = [ ( 'GE', 100, '10-sep-2001', 48 ), 
- ( 'CAT', 100, '1-apr-1999', 24 ), 
+purchases = [ ( 'GE', 100, '10-sep-2001', 48 ),
+ ( 'CAT', 100, '1-apr-1999', 24 ),
  ( 'GE', 200, '1-jul-1998', 56 ) ]
 ```
 
