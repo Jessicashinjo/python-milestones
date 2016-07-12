@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-cd ~/workspace/zoolandia
+mkdir -p workspace/python/exercises/zoolandia && cd $_
 git checkout -b version-2
 ```
 

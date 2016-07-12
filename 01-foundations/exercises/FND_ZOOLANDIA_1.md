@@ -3,7 +3,8 @@
 ## Setup
 
 ```bash
-cd && mkdir -p workspace/python/exercises/zoolandia && cd $_
+mkdir -p workspace/python/exercises/zoolandia && cd $_
+git checkout -b version-1
 touch zoolandia.py
 ```
 
