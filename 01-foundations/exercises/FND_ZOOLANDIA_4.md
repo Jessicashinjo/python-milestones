@@ -3,8 +3,8 @@
 ## Setup
 
 ```bash
-cd ~/workspace/zoolandia
-git checkout -b version-6
+cd ~/workspace/python/exercises/zoolandia
+git checkout -b version-4
 ```
 
 ## Instructions
