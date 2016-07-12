@@ -106,4 +106,4 @@ With our current code, the `Animal` class is an abstraction of more specific ani
 
 ## Resources
 * https://en.wikipedia.org/wiki/Object-oriented_programming
-
+* http://blog.thedigitalcatonline.com/blog/2014/05/19/method-overriding-in-python/
