@@ -1,6 +1,7 @@
-# Object Oriented Programming 
+# Object Oriented Programming
 
 There are four tenets of object oriented programming, and you encountered all of them during your experience with JavaScript, which itself is an object oriented language.
+
 
 ## Inheritance with Classes
 
