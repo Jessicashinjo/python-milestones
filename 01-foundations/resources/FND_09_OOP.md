@@ -31,13 +31,12 @@ class Dog(Animal):
         Animal.__init__(self, name, "Dog")
 ```
 
+
 ## Polymorphism
 
 [Polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) means that different objects may share the same set of properties and methods, but each may use those properties and methods to achieve different behavior.
 
 For example, in your base class of Animal, you define a general rule of how fast an Animal can walk. However, in the derived Lizard class, you can override that rule to give Lizards a slightly different behavior. For every leg they have, they can move twice as fast as a generic Animal.
-
-In Python, you use the `super()` method, which allows a derived class to invoke the corresponding method in the parent class.
 
 ```python
 class Animal:
@@ -68,6 +67,28 @@ class Dog(Animal):
     def walk(self):
         self.speed = self.speed + (0.2 * self.legs)
 ```
+
+In Python, you use the `super()` method, which allows a derived class to invoke the corresponding method in the parent class, possibly modifying its inputs or outputs before returning.
+
+```python
+class Animal:
+    def __init__(self, name = None, species = None):
+        self.name = name
+        self.species = species
+
+    def eatFood(self, food):
+        return "{0} eats {1}".format(self.name, food)
+
+class Panda(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name, "Panda")
+
+    def eatFood(self, food):
+        parent_message = super(Panda, self).eatFood(food)
+        message = ' '.join(parent_message, "but doesn't digest it very well")
+        return message
+```
+
 
 ## Encapsulation
 
