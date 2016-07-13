@@ -6,5 +6,5 @@ Python provides a built-in method to read user input on the command line.
 
 ```python
 user_name = input("Please enter your name")
-print("Well hello there %s" % (user_name))
+print("Well hello there {0}".format(user_name))
 ```

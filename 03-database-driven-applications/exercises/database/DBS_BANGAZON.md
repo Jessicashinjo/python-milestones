@@ -1,11 +1,14 @@
-# Bangazon! 
+# Bangazon!
+
 ## The Command Line Ordering System
 
 In this exercise, you will be allowing a user to interact with a basic product ordering database.
 
 ## Setup
 
-1. Create a new Visual Studio console solution named *Bangazon*.
+```
+mkdir ~/workspace/python/exercises/bangazon && cd $_
+```
 
 ## Instructions
 
@@ -125,39 +128,28 @@ Once the order is complete, show the main menu again, where the user can start c
 
 You have been shown all the component parts so far in class that are needed to complete this project.
 
-1. You can use WriteLine and ReadLine to show prompts and read user input.
-1. You know how to use [`SqlConnection` and `SqlDataReader`](https://github.com/chortlehoort/nss-invoices/blob/master/Invoices/Program.cs) to query data and iterate over the returned rows.
+1. You can use `print()` and `read()` to show prompts and read user input.
+1. You know how to use SQL connection strings to query data and iterate over the returned rows.
 1. You know how to insert data into a database (more references on that below).
 1. You can write conditional logic with `if` or `switch`.
 
 So start with the basics.
 
-1. Show the main menu and read the user's choice of options with a `ReadLine`.
-1. Based on what the user entered in, `WriteLine` their choice (e.g. "You chose to order a product")
+1. Show the main menu and read the user's choice of options with a `read()`.
+1. Based on what the user entered in, `print()` their choice (e.g. "You chose to order a product")
 1. Then create logic in each one of your conditions to accept further input (if needed).
 1. Once all user input is gathered, perform the appropriate database action - a SELECT or an INSERT - and direct the user back to the main menu.
 
 ## Inserting into table with SQL
 
-```cs
-string command = @"
+```python
+insert_command = "
 INSERT INTO Customer
     (FirstName, LastName, StreetAddress)
 VALUES
     ('Sophia', 'Vargas', '801 Kilgore Street')
-";
+"
 
-System.Data.SqlClient.SqlConnection sqlConnection1 = 
-    new System.Data.SqlClient.SqlConnection("YOUR CONNECTION STRING");
-
-System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
-cmd.CommandType = System.Data.CommandType.Text;
-cmd.CommandText = command;
-cmd.Connection = sqlConnection1;
-
-sqlConnection1.Open();
-cmd.ExecuteNonQuery();
-sqlConnection1.Close();
 ```
 
-> **External reference:** [How to: Insert New Records into a Database](https://msdn.microsoft.com/en-us/library/ms233812.aspx)
+> **External reference:** [How to: Insert New Records into a Database]()
