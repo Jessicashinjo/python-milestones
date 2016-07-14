@@ -1,1 +1,1 @@
-![API Era Milestone](./python-cli-applications.png)
+![API Era Milestone](./python-cli-application.png)
