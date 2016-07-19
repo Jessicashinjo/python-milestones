@@ -4,7 +4,6 @@
 
 Use the `open()` method to open files from the OS, and `read()`, or `readline()` methods to start reading the contents. When are you done with a file, always remember to `close()` it.
 
-
 ##### animals.txt
 
 ```
@@ -57,4 +56,18 @@ Tardigrade
 Red Panda
 
 >>> animals.close()
+```
+
+# With Statement
+
+It is also good practice to use the `with` keyword when dealing with file objects. This has the advantage that the file is properly closed after its block logic finishes, even if an exception is raised on the way.
+
+```python
+def read_flowers(self):
+
+with open("flowers", "r") as flowers:
+  flower_set = { flower.title() for flower in flowers }
+
+return flower_set
+
 ```
