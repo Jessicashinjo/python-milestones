@@ -1,0 +1,3 @@
+# Message Queues
+
+This is a stub README for a future CLI applications PowerUp module...

@@ -27,3 +27,8 @@ with open('serialized-interests', 'rb') as f:
   deserialized = pickle.load(f)
   print(deserialized)
 ```
+
+## Additional Resources
+
+* [Dive into Python: Serialization](http://www.diveintopython3.net/serializing.html)
+* [Python object serialization](https://docs.python.org/3.3/library/pickle.html)
