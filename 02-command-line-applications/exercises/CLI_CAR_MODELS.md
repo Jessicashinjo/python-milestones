@@ -36,7 +36,7 @@ N=Altima
 
 ## Requirements
 
-1. Create a class for all functionality.
+1. Create a single class that implements all functionality.
 1. Create a method for reading the car makes file.
 1. Create a method for reading the car models file.
 1. Create a method that invokes the previous two methods and generates a dictionary. 
