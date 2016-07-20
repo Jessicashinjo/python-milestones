@@ -13,6 +13,6 @@ Bash scripts are, at their most basic, just a list of terminal commands stored i
 echo 'Hello World!'
 ```
 
-The #! on the first line of a bash script is a special construct called a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) that tells the program loader to use the following interpreter (in this case `/bin/bash`) to run the rest of the script.
+In bash scripts a `#` is used to comment out a line, but the `#!` on the first line of a bash script is a special construct called a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)). This construct tells the program loader to use the following string (in this case `/bin/bash`) as a path to the interpreter to use to run the rest of the script.
 
 
