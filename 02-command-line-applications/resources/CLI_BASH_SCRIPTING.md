@@ -44,7 +44,7 @@ bash-3.2$
 
 #### Takeaways
 - To execute files you must set their execution permissions with `chmod +x filename.sh`
-- You must call the file using its path i.e. `./filename.sh`
+- You must call the file using its path i.e. `./filename.sh` if it's not in the PATH
 
 ## Variables and Logic
 
