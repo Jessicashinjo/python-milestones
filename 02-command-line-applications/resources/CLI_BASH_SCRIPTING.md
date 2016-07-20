@@ -27,8 +27,29 @@ When you type in a command in the terminal, the shell looks in certain places to
 
 To run the script, we need to provide the path to it.  You can use an absolute path such as `/Users/ryan/workspace/python/resources/bash_scripts/hello.sh`, which can be rather clunky, or relative path, which, if you're in the same directory will look like `./hello.sh`.  The dot `.` is the current directory, much like `..` is the parent directory, as you've likely used in the command `cd ..`.  Thus `./hello.sh` says "run the script `hello.sh` in the current directory."
 
+However running `./hello.sh` in the terminal will still result in an error: `bash: permission denied: ./hello.sh`!  Wait, we created this file, why don't we have permission to it?  Well, we _do_ have permission to read and write the file, but not to execute (run) it.  File permissions on Linux/Unix systems are fairly granular, with separate permissions for reading, writing, and executing a particular file.
 
-#### Variables and Logic
+You can check the permissions on a file by using the `ls` command with the `-l` flag for "long" which will show file permissions as well as ownership and modification date information.  Running the command `ls -l` in the same directory as our script should give output something like this: `-rw-r--r--  1 ryan  staff    0 Jul 20 14:00 hello.sh`
+
+There are three permissions in order, `r`ead `w`rite e`x`ecute, in three groupings for owner, group, and everyone.  With that in mind, looking at the permissions on our `hello.sh` file you can see the permissions for owner are `rw-` for group are `r--` and everyone are `r--`.  Everyone can read, only we, as the owner, can write, and nobody can execute the file.  In order to be able to run our file, we'll have to change the permissions to enable execution.  The command for this is [`chmod`, short for _change mode_](https://en.wikipedia.org/wiki/Chmod).
+
+`chmod` can accept [four octal digits](https://en.wikipedia.org/wiki/Chmod#Octal_modes) as an argument, which is outside the scope of this intro, but it also has useful flags for toggling specific permissions.  To make our file executable, the command is `chmod +x hello.sh`, which makes a bit of sense, as it's adding the e`x`ecute permission.  Running `ls -l` in the directory should now output something like `-rwxr-xr-x  1 ryan  staff    0 Jul 20 14:00 hello.sh`, and depending on your terminal the filename may have changed color to indicate that the file is now executable.
+
+Now, with the executable flag set and using `./` to point to our file, we can run it and observe the output.
+```
+bash-3.2$ ./hello.sh
+Hello World!
+bash-3.2$
+```
+
+#### Takeaways
+- To execute files you must set their execution permissions with `chmod +x filename.sh`
+- You must call the file using its path i.e. `./filename.sh`
+
+## Variables and Logic
+
+
+
 ```bash
 #!/bin/bash
 
