@@ -48,7 +48,7 @@ bash-3.2$
 
 ## Variables and Logic
 
-
+For more complex interactions, bash scripts support reading arguments from the terminal as well as setting and reading variables and logic constructs such as [if-else](http://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#if) and [case](http://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#case) statements.  Let's look at this example:
 
 ```bash
 #!/bin/bash
