@@ -20,6 +20,10 @@ touch margaret.py
 1. Each module must be able to serialize a dictionary to a file named `messages`.
 1. Each module must be able to deserialize the dictionary stored in `messages`.
 1. Each module, after the object is deserialized from the file, must add the message to the appropriate list in the dictionary.
+1. Each module must [handle exceptions](../FND_10_EXCEPTION_HANDLING.md) properly. You may encounter the following while testing your logic.
+    1. `FileNotFoundError`
+    1. `EOFError`
+    1. `KeyError`
 
 > **Tip:** Make sure you import `sys` for the command line arguments, and `pickle` for serialization.
 

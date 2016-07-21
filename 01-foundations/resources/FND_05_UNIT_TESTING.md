@@ -47,3 +47,7 @@ Read the [Test Discovery section](https://docs.python.org/3.3/library/unittest.h
 python -m unittest discover -s . -p "Test*.py" -v
 ```
 
+## Code Coverage
+
+You can use the Python tool [coverage.py](https://coverage.readthedocs.io/en/latest/), to ensure that your test suite has [100% coverage](http://blog.liw.fi/posts/unittest-coverage/) of your application's logic.
+
