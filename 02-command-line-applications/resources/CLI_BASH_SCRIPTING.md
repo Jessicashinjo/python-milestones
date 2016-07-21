@@ -48,14 +48,14 @@ bash-3.2$
 
 ## Variables and Logic
 
-For more complex interactions, bash scripts support reading arguments from the terminal as well as setting and reading variables and logic constructs such as [if-else](http://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#if) and [case](http://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#case) statements.  Let's look at this example:
+For more complex interactions, bash scripts support reading arguments from the terminal as well as setting and reading variables and logic constructs such as [if-else](http://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#if) and [case](http://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#case) statements.  Copy the code below into a new file `logic.sh`, chmod it and we'll give it a look:
 
 ```bash
 #!/bin/bash
 
 greeting=Hello
 
-if [ "$1" ]; then
+if [ $1 ]; then
   echo $greeting $1!
 else
   echo $greeting World!
@@ -64,4 +64,19 @@ fi
 
 As per the first example, we start the script with the shebang and path to bash.  The next line is a variable definition with the variable `greeting` initialized with the string value "Hello".  Like Python, variables in bash scripts don't need a keyword like `var` to be defined, unlike Python, strings can just be tossed in all willy-nilly without quotes, unless the string contains spaces.  Also of note, the lack of spaces between the variable, the equal sign, and the value.  In a bash script, those cannot have whitespace between them.  The line `greeting = Hello` would result in `line 3: greeting: command not found` and `greeting= Hello` would get `line 3: Hello: command not found`.
 
-The next block of code is a bash if statement which opens with an `if` and ends with a `fi`.  (Likewise a case statement opens with `case` and closes with `esac`.)  The test is contained within square brackets, and followed by a `then`.  Ignoring the `$1` for a moment, you'll notice a semicolon between the if's test and the `then`.  In a bash script, each line is a new command, and a semicolon can be used to separate multiple commands on the same line.
+The next block of code is a bash if statement which opens with an `if` and ends with a `fi`.  (Likewise a case statement opens with `case` and closes with `esac`.)  The test is contained within square brackets, and followed by a `then`.  Ignoring the `$1` for a moment, you'll notice a semicolon between the if's test and the `then`.  In a bash script, each line is a new command, and a semicolon can be used to separate multiple commands on the same line.  Putting the `then` on the same line as the `if` is a convention for readability, as is indenting the code within the if statement.  The following two if statements are functonally identical to the one in the script above.
+```bash
+if [ $1 ]; then; echo $greeting $1!; else; echo $greeting World!; fi
+
+if [ $1 ]
+then
+echo $greeting $1!
+else
+echo $greeting World!
+fi
+```
+Several places in the script you can see words prefixed with a `$`, and as the `$greeting` may have clued you in, this is a bash scripts way of referencing variables.  A word prefixed by the `$` will be replaced with that variable's value, thus for this script `echo $greeting` would output `Hello`.
+
+So what about that `$1` we never declared?  Bash scripts have what are called [positional parameters](http://tldp.org/LDP/abs/html/othertypesv.html) which are used to access arguments passed to the script on the command line when it is executed.  `$0` references the command itself, `$1` the first argument, `$2` the second, etc.  As an example, given a script `position.sh` that contains only the line `echo $0 $1 $2 $3` calling it with just `./position.sh` would output `position.sh` to the terminal.  Calling it with `./position.sh foo` gives `position.sh foo` etc.  For positional arguments over 9, curly braces are needed i.e. `${10}`, though you'll rarely if ever need to write a script that takes that many runtime arguments.  If you do, there's also the special variables `$*` and `$@` which grab _all_ the positional parameters.
+
+Knowing about positional parameters, we can now evaluate the test in the if statement.  Since there's no comparsion checking with a `==` or similar, this if clause only tests if `$1` exists, i.e., was `logic.sh` called with an argument.
