@@ -82,3 +82,5 @@ So what about that `$1` we never declared?  Bash scripts have what are called [p
 Knowing about positional parameters, we can now evaluate the test in the if statement.  Since there's no comparsion checking with a `==` or similar, this if clause only tests if `$1` exists, i.e., was `logic.sh` called with an argument.  Looking at the cases, in the `then` the `echo` prints `$greeting` a space `$1` and an exclamation point, while in the `else` it prints `$greeting` and " World!"  Notice that there is no string concatination required in the output from `echo`, it prints exactly what follows it, replacing the variables with their content and printing all other characters as they are in the line.
 
 With all the pieces in place, we can look at the script and see that if called with an argument `./logic.sh Bobert` it should print `Hello Bobert!` and if called without `./logic.sh` it should print `Hello World!`.
+
+## Incorporating Python
