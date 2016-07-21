@@ -53,7 +53,7 @@ For more complex interactions, bash scripts support reading arguments from the t
 ```bash
 #!/bin/bash
 
-greeting='Hello'
+greeting=Hello
 
 if [ "$1" ]; then
   echo $greeting $1!
@@ -61,3 +61,7 @@ else
   echo $greeting World!
 fi
 ```
+
+As per the first example, we start the script with the shebang and path to bash.  The next line is a variable definition with the variable `greeting` initialized with the string value "Hello".  Like Python, variables in bash scripts don't need a keyword like `var` to be defined, unlike Python, strings can just be tossed in all willy-nilly without quotes, unless the string contains spaces.  Also of note, the lack of spaces between the variable, the equal sign, and the value.  In a bash script, those cannot have whitespace between them.  The line `greeting = Hello` would result in `line 3: greeting: command not found` and `greeting= Hello` would get `line 3: Hello: command not found`.
+
+The next block of code is a bash if statement which opens with an `if` and ends with a `fi`.  (Likewise a case statement opens with `case` and closes with `esac`.)  The test is contained within square brackets, and followed by a `then`.  Ignoring the `$1` for a moment, you'll notice a semicolon between the if's test and the `then`.  In a bash script, each line is a new command, and a semicolon can be used to separate multiple commands on the same line.
