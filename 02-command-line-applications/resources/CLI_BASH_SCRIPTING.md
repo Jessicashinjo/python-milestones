@@ -84,3 +84,16 @@ Knowing about positional parameters, we can now evaluate the test in the if stat
 With all the pieces in place, we can look at the script and see that if called with an argument `./logic.sh Bobert` it should print `Hello Bobert!` and if called without `./logic.sh` it should print `Hello World!`.
 
 ## Incorporating Python
+
+As Python can be run from the terminal, you can use bash scripts to automate execution of your Python code.  A very simplistic example with a python file `simple.py`:
+```python
+print('World!')
+```
+and bash `script.sh`:
+```bash
+#!/bin/bash
+
+python_output=`python simple.py`
+
+echo 'Hello' $python_output
+```
