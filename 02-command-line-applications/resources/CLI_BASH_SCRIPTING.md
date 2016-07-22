@@ -98,4 +98,6 @@ python_output=`python simple.py`
 echo 'Hello' $python_output
 ```
 
-You've seen most of the content in the bash script before outside the execution of the Python code.  Sticking `python simple.py` on its own line in the script would run that exact command, telling the Python interpreter to run the `simple.py`, but it would immediately print that "World!" to the console as it was executed.  To capture the output of a program execution, the executable command needs to be wrapped in backticks.  Doing so on line three of the bash script sets the bash variable `python_output` to the _terminal output_ of `simple.py`, so it can then be used later in the `echo` statement to build a full "Hello World!".
+You've seen most of the content in the bash script before outside the execution of the Python code.  Sticking `python simple.py` on its own line in the script would run that exact command, telling the Python interpreter to run the `simple.py`, but it would immediately print that "World!" to the console as it was executed.  To capture the output of a program execution, the executable command needs to be wrapped in backticks.  Doing so on line three of the bash script sets the bash variable `python_output` to the _terminal output_ (i.e. printed data) of `simple.py`, so it can then be used later in the `echo` statement to build a full "Hello World!".
+
+That's bringing Python output into a bash script, but what about the reverse
