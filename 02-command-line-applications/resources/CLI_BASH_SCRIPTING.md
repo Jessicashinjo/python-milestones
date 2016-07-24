@@ -100,7 +100,7 @@ echo 'Hello' $python_output
 
 You've seen most of the content in the bash script before outside the execution of the Python code.  Sticking `python simple.py` on its own line in the script would run that exact command, telling the Python interpreter to run the `simple.py`, but it would immediately print that "World!" to the console as it was executed.  To capture the output of a program execution, the executable command needs to be wrapped in backticks.  Doing so on line three of the bash script sets the bash variable `python_output` to the _terminal output_ (i.e. printed data) of `simple.py`, so it can then be used later in the `echo` statement to build a full "Hello World!".
 
-That's bringing Python output into a bash script, but what about the reverse?  Python has a built in library `sys` that enables access to command line arguments passed at execution time.  Its syntax looks much like the positional parameters from bash scripts, where the index number referenced in `sys.argv[]` corresponds to the argument number in the sent list of arguments.  In the following `sentargs.py` script, the `sys.argv[1]` grabs the first argument sent it and uses that in its output.
+That's bringing Python output into a bash script, but what about the reverse?  Python has a [built in library `sys`](https://docs.python.org/3.3/library/sys.html) that enables access to command line arguments passed at execution time.  Its syntax looks much like the positional parameters from bash scripts, where the index number referenced in `sys.argv[]` corresponds to the argument number in the sent list of arguments.  In the following `sentargs.py` script, the `sys.argv[1]` grabs the first argument sent it and uses that in its output.
 
 ```python
 import sys
