@@ -12,7 +12,7 @@ chmod +x builder.sh
 
 ## Instructions
 
-You've been making lists of things you want to purchase, but, due to the thoughts randomly popping into your head, you've just thrown the purchaes into a text file all willy-nilly.  Now that you're looking to go shopping, you'd like to have a more organized list to take with you, but who has the time to organize lists by hand?  Create a program flow that works as follows.
+You've been making lists of things you want to purchase, but, due to the thoughts randomly popping into your head, you've just thrown the purchase into a text file all willy-nilly.  Now that you're looking to go shopping, you'd like to have a more organized list to take with you, but who has the time to organize lists by hand?  Create a program flow that works as follows.
 
 1. A Python module that:
   1. Takes an argument specifying a text file to read.
@@ -34,14 +34,14 @@ You've been making lists of things you want to purchase, but, due to the thought
   ./builder.sh grocery
   ```
   2. Passes that argument to the first Python module.
-  3. Recieves the output from the first Python module and passes it to the second Python module.
+  3. Receives the output from the first Python module and passes it to the second Python module.
 
 ## Requirements
 
 **Write tests for Python functionality before writing implementation code**
 
 * Populate `grocery.txt` with grocery items, one per line.
-* Populate `clothing.txt` with cloting items, one per line.
+* Populate `clothing.txt` with clothing items, one per line.
 * Populate `jewelry.txt` with jewelry items, one per line.
 * Output the final list to `currentitems.txt`.
 
