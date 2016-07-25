@@ -20,6 +20,8 @@ This exercise involved creating a system that generates myriad shapes. Build a c
     1. etc..
 1. After basic size information is entered, the program will output circumference/area/volume of the shape, and the number of sides for the shape.
 
+> **Note:** Keep your code DRY. Class inheritance can definitely be used to your advantage in this exercise.
+
 ##### Step 1 Example
 
 ```bash
