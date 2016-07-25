@@ -4,16 +4,17 @@
 
 Create a Console based Calculator in Python.
 
-## Rules
+## Setup
 
-- Clone this repo.
-- Create a new repo on GitHub with no README, License or .gitignore.
-- Copy your new repo's url as if you were about to clone it, but *don't* clone it.
-- In the copy of _this_repo you cloned down, remove its remote by typing `git remote remove origin`.
-- Then add your repo as the remote origin with `git remote add origin paste-the-url-of-your-newly-made-repo-here`.
-- There should be Unit Tests on all classes and methods you create.
-- This is an OOP focused class. Therefore, there will be classes. Your `Program` class and `Main` method should only be responsible for receiving user input and printing output.
-- If a user submits an incomplete command or expression, the calculator should **not** attempt to evaluate it but print out a useful message.
+```
+mkdir -p ~/workspace/python/exercises/calc && cd $_
+```
+
+
+## Requirements
+
+1. There should be Unit Tests on all classes and methods you create.
+1. If a user submits an incomplete command or expression, the calculator should **not** attempt to evaluate it but print out a useful message.
 
 ## Overview of how it should work
 
@@ -80,7 +81,7 @@ In addition to math expressions, your calculator should accept the following com
 
 ### Challenge: Constants
 
-Implement the concept of 'constants' in the caluculator. See below for how it should work:
+Implement the concept of 'constants' in the calculator. See below for how it should work:
 
 ```sh
 [0]> x = 3
