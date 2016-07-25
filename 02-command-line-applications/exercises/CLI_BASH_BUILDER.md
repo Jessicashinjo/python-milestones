@@ -38,4 +38,14 @@ You've been making lists of things you want to purchase, but, due to the thought
 
 ## Requirements
 
+**Write tests for Python functionality before writing implementation code**
 
+* Populate `grocery.txt` with grocery items, one per line.
+* Populate `clothing.txt` with cloting items, one per line.
+* Populate `jewelry.txt` with jewelry items, one per line.
+* Output the final list to `currentitems.txt`.
+
+## Bonus features
+
+* Ensure the program can handle items with spaces.
+* Allow the program to be run multiple times, sequentially, adding each list to `currentitems.txt` with an appropriate heading.
