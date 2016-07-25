@@ -19,6 +19,27 @@ sqlite>
 
 If you do not see above result, then it means you do not have SQLite installed on your machine. Go to [SQLite Download page](http://www.sqlite.org/download.html) and download the precompiled binaries for your machine.
 
+##### For Windows:
+
+You will need to download sqlite-shell-win32-*.zip and sqlite-dll-win32-*.zip zipped files.
+
+Create a folder C:\>sqlite and unzip the files in this folder which will give you sqlite3.def, sqlite3.dll and sqlite3.exe files.
+
+Add C:\>sqlite in your PATH environment variable and finally go to the command prompt and issue `sqlite3` command.
+
+##### For Mac:
+
+After downloading the files, follow these steps:
+
+```
+$tar xvfz sqlite-autoconf-3071502.tar.gz
+$cd sqlite-autoconf-3071502
+$./configure --prefix=/usr/local
+$make
+$make install
+```
+
+
 ## Instructions
 
 1. Ensure you have the [Chinook Database](http://chinookdatabase.codeplex.com/) and [SQLite Manager Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/) installed.
