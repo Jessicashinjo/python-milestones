@@ -3,7 +3,7 @@
 ## Setup
 
 ```
-mkdir -p ~/workspace/python/exercises/cli && cd $_
+mkdir -p ~/workspace/python/exercises/shapes && cd $_
 touch sharpshapes.py
 ```
 

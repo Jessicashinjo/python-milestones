@@ -2,6 +2,13 @@
 
 Use Python to build a console app where the user is challenged to enter all the letters of the alphabet, one at a time, without repeating any, and without typing any non-letter characters.
 
+## Setup
+
+```
+mkdir -p ~/workspace/python/exercises/alphabits && cd $_
+touch lootbag.py
+```
+
 ## Behavior
 
 1. After each successful input,  display the number of letters already entered.
