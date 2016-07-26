@@ -3,7 +3,7 @@
 When you run a Python module via the command line...
 
 ```sh
-python awesomemodule.py
+python printname.py
 ```
 
 You can pass in arguments to the module to change it's behavior when it is executed. For example, let's look at a simple example of a module that simply prints out a person's name. It accepts two arguments.
