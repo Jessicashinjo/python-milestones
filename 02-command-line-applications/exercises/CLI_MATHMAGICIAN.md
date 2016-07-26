@@ -15,20 +15,19 @@ Write your unit tests to reflect what classes, methods, and I/O is expected for 
 
 ### Step 2
 
-Your program will have one class with a **minimum** of three methods on it:
+Your program will have one class with a **minimum** of three methods on it. Each method should also accept an argument that determines how many times the function should output a number.
 
-1. `print_integers(self)`
-1. `print_fibonacci(self)`
-1. `print_primes(self)`
+1. `print_integers(self, number_to_output)`
+1. `print_fibonacci(self, number_to_output)`
+1. `print_primes(self, number_to_output)`
+
+While those are the three methods you should have, you likely will have to implement other methods that call them instead of writing all your logic inside them.
 
 Write unit tests that will verify the output of each method. Do not write any implementation code until you have a unit test for each method that fails.
 
 ### Step 3
 
-Create a simple implementation of a console application that displays a prompt to the user, and listens for a key press.
-
-1. Use `print()` to output the message `Press any key to exit`.
-1. Use `input` to accept user input, so that when your program runs, you press a key and it exits.
+Build the menu first with options to execute the three methods above. Make the last option `4. Quit program`. When the user selects that option, make sure the program terminates (i.e. don't show the list of options again).
 
 ### Step 4
 
