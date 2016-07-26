@@ -15,31 +15,32 @@ Write your unit tests to reflect what classes, methods, and I/O is expected for 
 
 ### Step 2
 
-Your program will have one class with a **minimum** of three methods on it. Each method should also accept an argument that determines how many times the function should output a number.
+Your program will have one class with a **minimum** of three methods on it. Each method should also accept an argument that determines how many numbers in the corresponding sequence should be generated.
 
-1. `print_integers(self, number_to_output)`
-1. `print_fibonacci(self, number_to_output)`
-1. `print_primes(self, number_to_output)`
+1. `generate_integers(self, number_to_output)`
+1. `generate_fibonacci(self, number_to_output)`
+1. `generate_primes(self, number_to_output)`
 
-While those are the three methods you should have, you likely will have to implement other methods that call them instead of writing all your logic inside them.
-
-Write unit tests that will verify the output of each method. Do not write any implementation code until you have a unit test for each method that fails.
+You decide what type of collection that each of those methods should produce. Write unit tests that will verify the output of each method. Do not write any implementation code until you have a unit test for each method that fails.
 
 ### Step 3
 
-Build the menu first with options to execute the three methods above. Make the last option `4. Quit program`. When the user selects that option, make sure the program terminates (i.e. don't show the list of options again).
+Next, build the menu that the user will see when your module is executed.
+
+```sh
+I am the Math Magician. What would you like me to do?
+
+1. List prime numbers
+2. Show fibonacci sequence
+3. List integers
+4. Quit
+```
 
 ### Step 4
 
 Now you'll write the implementation code for your three methods, and the operation of the program itself.
 
-1. You want it to do one of three mathematical operations. Update your prompt to be *I am the Math Magician. What would you like me to do?* The options will be Fibonacci, Primes, or Integers.
-    
-    ```
-    user_choice = input('I am the Math Magician. What would you like me to do? ')
-    ```
-1. The goal here is that once the user tells the program what operation to perform, it will spit out the numbers forever until you “ctrl+c”.
-  `print(“Ok. I’m going to help produce " + user_choice);`
+1. When the user picks a sequence to generate, then ask how many number of the sequence should be printed.
 1. Use `time.sleep(seconds)` when you output each number to the console to make each number legible (otherwise it goes too fast).
 1. Make sure that your code validates user input. As a software developer, part of your job will be to handle edge cases. Think about possible things that the user can do that don't match what you expect of them, because they will. For example, at the prompt, they could type in the string `Integers`.
 
