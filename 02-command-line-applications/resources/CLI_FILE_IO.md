@@ -44,8 +44,26 @@ I found a Tardigrade
 
 To write to a file, you still use `open()` but the second argument is now `w` for write-mode. Remember to close the file after you are done with it, whether you have it open for reading or writing.
 
+Keep in mind that in write-mode, the existing contents of the file, if any, will be overwritten.
+
 ```python
 >>> animals = open('animals.txt', 'w')
+>>> animals.write('Red Panda')
+>>> animals.close()
+>>> animals = open('animals.txt', 'r')
+>>> print(animals.read())
+
+Red Panda
+
+>>> animals.close()
+```
+
+## Appending to files
+
+To append to the contents of a file, you still use `open()` but the second argument is now `a` for append-mode. Remember to close the file after you are done with it.
+
+```python
+>>> animals = open('animals.txt', 'a')
 >>> animals.write('Red Panda')
 >>> animals.close()
 >>> animals = open('animals.txt', 'r')
