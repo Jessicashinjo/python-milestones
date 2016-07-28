@@ -21,8 +21,8 @@ Then, in the mythical `__main__` method, you can use the `sys.argv` list to read
 
 ```python
 if __name__ == "__main__":
-  print("First name is ".format(sys.argv[1]))
-  print("Last name is ".format(sys.argv[2]))
+  print("First name is {0}".format(sys.argv[1]))
+  print("Last name is {0}".format(sys.argv[2]))
 ```
 
 Then you execute the module from the CLI.
