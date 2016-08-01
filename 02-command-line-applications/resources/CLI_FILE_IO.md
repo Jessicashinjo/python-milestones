@@ -83,9 +83,9 @@ It is also good practice to use the `with` keyword when dealing with file object
 ```python
 def read_flowers(self):
 
-with open("flowers", "r") as flowers:
-  flower_set = { flower.title() for flower in flowers }
+  with open("flowers", "r") as flowers:
+    flower_set = { flower.title() for flower in flowers }
 
-return flower_set
+  return flower_set
 
 ```
