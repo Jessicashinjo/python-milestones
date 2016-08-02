@@ -50,7 +50,7 @@ def message():
 
 Now when you execute the `message()` method, what's actually being invoked is the `final_function()` method that the `heading()` returns.
 
-```sh
+```
 Python 3.3.6 (default, Nov 16 2015, 10:56:55) 
 [GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.1.76)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -58,3 +58,32 @@ Type "help", "copyright", "credits" or "license" for more information.
 '<h1>Nashville Software School</h1>'
 ```
 
+## HTML Output Formatting with Decorators
+
+You can add as many decorators to a method that you like. Just make sure that each one returns a method that can be passed to the next one.
+
+```py
+def bold(message_function):
+  def final_function():
+    return "<strong>{0}</strong>".format(message_function());
+  return final_function
+
+def italic(message_function):
+  def final_function():
+    return "<em>{0}</em>".format(message_function());
+  return final_function
+
+def underline(message_function):
+  def final_function():
+    return "<u>{0}</u>".format(message_function());
+  return final_function
+
+
+@bold
+@italic
+@underline
+def message():
+  return "Nashville Software School"
+
+print(message())
+```
