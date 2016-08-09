@@ -14,7 +14,7 @@ Make a Django application that helps with the operation of a Veterinarian's offi
 1. Pet name
 2. Animal type
 3. Breed (if applicable)
-4. Name of their owner 
+4. Name of their owner
 5. Name of their veterinarian
 
 ### Pet List
