@@ -4,7 +4,6 @@
 
 ```
 mkdir -p ~/workspace/python/exercises/radlibs && cd $_
-sqlite3 radlibs.db
 ```
 
 ## Instructions
