@@ -14,7 +14,7 @@ This exercise mocks the operations of a Veterinarian's office.  The office needs
 1. Pet name
 2. Animal type
 3. Breed (if applicable)
-4. Name of their owner 
+4. Name of their owner
 5. Name of their veterinarian
 
 ## Requirements
