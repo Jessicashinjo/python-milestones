@@ -4,12 +4,12 @@
 
 ```
 mkdir -p ~/workspace/python/exercises/vet-clinic && cd $_
-sqlite3 vetclinic.db
+django-admin startproject vetclinic
 ```
 
-## Instructions
+## Requirements
 
-This exercise mocks the operations of a Veterinarian's office.  The office needs software that keeps track of their animal patients, human owners and the primary veterinarian for each animal. Make a Django application that responds with a web page containing a list of pets with the following properties:
+Make a Django application that helps with the operation of a Veterinarian's office.  The office needs software that keeps track of their animal patients, human owners and the primary veterinarian for each animal.
 
 1. Pet name
 2. Animal type
@@ -17,15 +17,22 @@ This exercise mocks the operations of a Veterinarian's office.  The office needs
 4. Name of their owner 
 5. Name of their veterinarian
 
-## Requirements
+### Pet List
 
-1. Each pet should include their name (i.e. Fido), species (cat, dog, etc.), breed (if applicable), human owner and veterinarian.
-2. Populate the tables with example data, give each veternatian several patients and at least 3 humans more than one pet.
-3. Make at least 3 tables.
-4. Use SQL to join the 3 tables to retrieve the data for the list.
+This will list all pet names, and their owner, sorted by pet name. The name of the pet will be a hyperlink to show the pet details.
 
-## Bonus Criteria
+### Pet Detail
 
-1. Make a patient profile view that gives the name, owner and veterinarian of a single animal
-2. Make a fourth table that lists charges for vet services. Populate this with sample data that tracks the vet, the owner, and the price for the service.  Then use SQL to make an invoice for the pet owner.
+The detail view will show the following information.
 
+1. Name
+2. Species
+3. Owner name
+4. Veterinarian
+5. Date of last visit
+
+## Bonus Goal
+
+1. In the pet list view, make the owner name a hyperlink that will show charges paid for each visit by that owner.
+2. The charges paid view will display the owner name, and a list showing the date of each visit and the amount paid for the visit.
+3. 
