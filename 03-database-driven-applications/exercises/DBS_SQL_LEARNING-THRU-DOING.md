@@ -112,7 +112,7 @@ For each of the following exercises, provide the appropriate query. Yes, even th
 1. `brazil_customers.sql`: Provide a query only showing the Customers from Brazil.
 1. `brazil_customers_invoices.sql`: Provide a query showing the Invoices of customers who are from Brazil. The resultant table should show the customer's full name, Invoice ID, Date of the invoice and billing country.
 1. `sales_agents.sql`: Provide a query showing only the Employees who are Sales Agents.
-1. `unique_invoice_countries.sql`: Provide a query showing a unique list of billing countries from the Invoice table.
+1. `unique_invoice_countries.sql`: Provide a query showing a unique/distinct list of billing countries from the Invoice table.
 1. `sales_agent_invoices.sql`: Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
 1. `invoice_totals.sql`: Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
 1. `total_invoices_{year}.sql`: How many Invoices were there in 2009 and 2011? 
@@ -126,7 +126,10 @@ For each of the following exercises, provide the appropriate query. Yes, even th
 1. `tracks_no_id.sql`: Provide a query that shows all the Tracks, but displays no IDs. The result should include the Album name, Media type and Genre.
 1. `invoices_line_item_count.sql`: Provide a query that shows all Invoices but includes the # of invoice line items.
 1. `sales_agent_total_sales.sql`: Provide a query that shows total sales made by each sales agent.
-1. `top_2009_agent.sql`: Which sales agent made the most in sales in 2009? HINT: [MAX](https://www.sqlite.org/lang_aggfunc.html#maxggunc)
+1. `top_2009_agent.sql`: Which sales agent made the most in sales in 2009?
+
+    > **Hint:** Use the [MAX](https://www.sqlite.org/lang_aggfunc.html#maxggunc) function on a [subquery](http://beginner-sql-tutorial.com/sql-subquery.htm).
+
 1. `top_agent.sql`: Which sales agent made the most in sales over all?
 1. `sales_agent_customer_count.sql`: Provide a query that shows the count of customers assigned to each sales agent.
 1. `sales_per_country.sql`: Provide a query that shows the total sales per country.
