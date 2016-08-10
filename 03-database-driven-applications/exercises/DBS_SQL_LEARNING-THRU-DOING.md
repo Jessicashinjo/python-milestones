@@ -32,7 +32,7 @@ Add `C:\>sqlite` to your [PATH environment variable](http://dustindavis.me/updat
 After downloading the files, follow these steps:
 
 ```
-$tar xvfz sqlite-autoconf-3071502.tar.gz
+$tar -xvzf sqlite-autoconf-3071502.tar.gz
 $cd sqlite-autoconf-3071502
 $./configure --prefix=/usr/local
 $make
@@ -47,7 +47,7 @@ Once the download is complete, you can open Window Explorer or Mac Finder and ju
 
 ## Install SQLite Management Tool
 
-You have a couple options. 
+You have a couple options.
 
 ### Firefox Add On
 
