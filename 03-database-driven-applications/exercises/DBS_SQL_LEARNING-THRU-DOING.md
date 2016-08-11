@@ -29,10 +29,16 @@ Add `C:\>sqlite` to your [PATH environment variable](http://dustindavis.me/updat
 
 ### For Mac
 
-After downloading the files, follow these steps:
+First, try to install via Homebrew:
 
 ```
-$tar xvfz sqlite-autoconf-3071502.tar.gz
+brew install sqlite3
+```
+
+If not, download the package from above. After downloading the files, follow these steps:
+
+```
+$tar -xvzf sqlite-autoconf-3071502.tar.gz
 $cd sqlite-autoconf-3071502
 $./configure --prefix=/usr/local
 $make
@@ -47,7 +53,7 @@ Once the download is complete, you can open Window Explorer or Mac Finder and ju
 
 ## Install SQLite Management Tool
 
-You have a couple options. 
+You have a couple options.
 
 ### Firefox Add On
 
