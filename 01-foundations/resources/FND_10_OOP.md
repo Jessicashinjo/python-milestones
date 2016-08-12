@@ -38,6 +38,8 @@ class Dog(Animal):
 
 For example, in your base class of Animal, you define a general rule of how fast an Animal can walk. However, in the derived Lizard class, you can override that rule to give Lizards a slightly different behavior. For every leg they have, they can move twice as fast as a generic Animal.
 
+This is subclass polymorphism - achieved with inheritance. Both `Dog` and `Animal` are typed as `Animal` so you have the same type exhibiting different behaviors.
+
 ```python
 class Animal:
     def __init__(self, name = None, species = None):
@@ -68,7 +70,7 @@ class Dog(Animal):
         self.speed = self.speed + (0.2 * self.legs)
 ```
 
-In Python, you use the `super()` method, which allows a derived class to invoke the corresponding method in the parent class, possibly modifying its inputs or outputs before returning.
+In Python, you can use the `super()` method, which allows a derived class to invoke the corresponding method in the parent class, possibly modifying its inputs or outputs before returning.
 
 ```python
 class Animal:
@@ -81,13 +83,53 @@ class Animal:
 
 class Panda(Animal):
     def __init__(self, name):
-        Animal.__init__(self, name, "Panda")
+        super().__init__(self, name, "Panda")
 
+    # The eatFood method's behavior is derived from the parent
+    # class, but is made more specialized in the derived class
     def eatFood(self, food):
         parent_message = super(Panda, self).eatFood(food)
         message = ' '.join(parent_message, "but doesn't digest it very well")
         return message
 ```
+
+There is another kind of polymorphism that is achieved by method overloading. What this means is that a method on a class can behave differently based on it signature. In Python, you achieve this via named method arguments with default values.
+
+Here's an example.
+
+```py
+class Building:
+
+  # Even though the method is defined once, the named arguments
+  # with default values actually produces multiple signatures
+  def collapse(source=None, site=None)
+    if source is None:
+      reason = "for no apparent reason"
+    else:
+      reason = "because a " + source + " hit it"
+
+    if site is None:
+      site = "into nothing"
+    else:
+      site = "into " + site
+
+    return "The building collapsed {} {}".format(site, reason)
+
+
+# Create an instance of the class
+leaning_tower = Building()
+
+# Method signature #1
+leaning_tower.collapse(source="gust of wind")
+
+# Method signature #2
+leaning_tower.collapse(site="a lagoon")
+
+# Method signature #3
+leaning_tower.collapse(site="the sidewalk", source="flock of birds")
+```
+
+
 
 
 ## Encapsulation
