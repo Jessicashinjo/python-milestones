@@ -8,27 +8,6 @@ mkdir -p ~/workspace/python/exercises/djangotime && cd $_
 
 ## Instructions
 
-
-Start by creating a virtual environment
-
-```
-$ python3 -m venv myvenv
-(replace myenv with name of your virtual environment. The above command will create a directory.)
-```
-
-Start working on that virtual environment.
-
-```
-$ workon myvenv
-You will know you are successfully using the virtual environment when you see (myvenv).
-```
-
-Install Django
-
-```
-$ pip install django
-```
-
 Create the files for this django project.
 For Mac:
 
@@ -42,13 +21,7 @@ For Windows:
 $ django-admin.py startproject mysite .
 ```
 
-Create database for the project. Make sure you run the following command in the directory where manage.py file is:
-
-```
-python manage.py migrate
-```
-
-And now we can start the web server
+And now we can start the web server.
 
 ```
 python manage.py runserver
@@ -61,7 +34,6 @@ python manage.py startapp blog
 ```
 
 After creating an application we also need to tell Django that it should use it. In mysite/settings/py, add a line containing 'blog' in the INSTALLED_APPS list.
-
 
 
 Create blog post model in blog/models.py:
@@ -92,4 +64,10 @@ Create tables for models in the database:
 
 ```
 $ python manage.py makemigrations blog
+```
+
+Create database for the project. Make sure you run the following command in the directory where manage.py file is:
+
+```
+python manage.py migrate
 ```
