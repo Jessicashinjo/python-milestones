@@ -13,10 +13,9 @@ Use [draw.io](https://www.draw.io/) to make an ERD for the Zoolandia project. Ma
 
 ## Species
 
-1. Name
-2. Common name
-3. Scientific name
-4. Web URL for information
+1. Common name
+2. Scientific name
+3. Web URL for information
 
 ## Habitat Type
 
