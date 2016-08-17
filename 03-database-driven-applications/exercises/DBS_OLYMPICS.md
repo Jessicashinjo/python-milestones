@@ -2,15 +2,30 @@
 
 ## Requirements
 
-Create a Olympics application and display in the browser the view a doctor would see when he/she walks into the exam room with a specific patient in them.  This should include the athletes name, country, list of events and a list of their results.  
+Create a Olympics application and display in the browser the view a user would see that includes the athletes name, country, list of events.
 
 ## Setup
 
-1.
+```
+mkdir -p ~/workspace/python/exercises/olympic_games && cd $_
+```
+
 
 ## Instructions
 
-1.   
+
+Create files for this project
+
+```
+$ django-admin startproject olympics .
+```
+
+Create the application.
+
+Create model.
+
+Create table and migrate database.
+
 
 ## Bonus Criteria
-1. 
+1. Stretch goals for this project include adding athlete results in each event, using radio buttons (gold, silver, bronze).  
