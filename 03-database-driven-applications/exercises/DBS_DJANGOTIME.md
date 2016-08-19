@@ -33,7 +33,7 @@ Create the application (from the directory where manage.py is stored):
 python manage.py startapp blog
 ```
 
-After creating an application we also need to tell Django that it should use it. In mysite/settings/py, add a line containing 'blog' in the INSTALLED_APPS list.
+After creating an application we also need to tell Django that it should use it. In mysite/settings.py, add a line containing 'blog' in the INSTALLED_APPS list.
 
 
 Create blog post model in blog/models.py:
