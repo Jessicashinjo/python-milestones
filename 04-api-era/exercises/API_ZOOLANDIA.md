@@ -1,11 +1,7 @@
-# CORS
+# Zoolandia API
 
-#### If using third party API
-* Need to enable CORS on MVC App, to access `www.<Company1Name>.com` from `api.<Company2Name>.com`
+Your task is to build a RESTful API that will allow a client to navigate the resources in the Zoolandia database.
 
-#### Resources
+## Requirements
 
-* https://www.w3.org/TR/cors/
-* https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
-* http://enable-cors.org/
-* https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
+1. Your initial, root URI will respond with a JSON object contain key/value pairs for each resource.
