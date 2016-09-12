@@ -2,7 +2,7 @@
 
 Regular expressions is an example of a context-free grammar. This means that as a developer there's little to no constraints on the order and combination of expressions.
 
-In contrast, C# is an example of a *context-bound* programming language. This is where there are rules that say where certain expressions should go. For example, using statements can not go inside of methods.
+In contrast, Python is an example of a *context-bound* programming language. This is where there are rules that say where certain expressions should go.
 
 ## Character Classes
 
@@ -126,4 +126,11 @@ Using the above pattern, `Nov 10, 2007` would result in 3 dictionary with the re
 }
 ```
 
-## Zero-Width Assertions (Advanced Material)
+# Resources
+
+* [RegExr](http://www.regexr.com/) - A wonderful online tool to learn regular expressions.
+* [RegexOne](https://regexone.com/) - Learn Regular Expressions with simple, interactive exercises.
+* [RegularExpressions.info](http://www.regular-expressions.info/tutorial.html) - One of the best tutorials to learn regular expressions
+* [Regex Pal](http://www.regexpal.com/) - A free, online regular expression playground
+
+
