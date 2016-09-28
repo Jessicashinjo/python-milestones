@@ -96,40 +96,16 @@ You can use the CLI interpreter to enter and run some code that you just want to
 
 ```
 ╰─$ python
-Python 2.7.10 (default, Jul 14 2015, 19:46:27) 
+Python 2.7.10 (default, Jul 14 2015, 19:46:27)
 [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> i_am_awesome = True
 >>> if i_am_awesome:
 ...   print "bow down to me"
-... 
+...
 bow down to me
 ```
 
 ## Pip
 
 Pip is, by far, the most common way for [Python packages to be installed](https://packaging.python.org/en/latest/installing/#use-pip-for-installing). Take some time, by following the previous link, to review how to properly use pip to install packages.
-
-## Order of Exercises
-
-This is a suggested order for completing the exercises in this milestone:
-
-### Basic syntax
-1. Dictionaries
-1. Sets
-1. Lists
-1. Tuples
-1. Classes
-
-### Advanced Usage
-1. Family Dictionary
-1. Kill Nickelback
-1. RandomSquared
-1. Test_Animals
-1. Calculator 
-
-### Quiz
-Koans
-
-
-
